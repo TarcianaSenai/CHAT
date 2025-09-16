@@ -5,6 +5,7 @@ from fastapi import APIRouter
 # from ..manager import ConnectionManager
 # from ..database import get_history
 
+
 router = APIRouter()
 
 @router.get("/")
@@ -19,4 +20,9 @@ async def list_salas():
 @router.get ("/slas")
 async def history(sala_id: str):
         return{"message": "Aqui teremos o historico"}
+
+@router.get ("/teste")
+async def teste():
+        salvar_mensagem(1, "CALOSH", "oi oi oi")
+        return{"message": "TESTANDOOOOOOOOOOOOOOOOOOO"}
 

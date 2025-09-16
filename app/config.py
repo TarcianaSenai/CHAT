@@ -1,0 +1,5 @@
+HOST = "192.168.254.251"
+PORT = 8000
+
+MONGOURL ="mongodb://localhost:27017/"
+MONGODB="CHATDB"
